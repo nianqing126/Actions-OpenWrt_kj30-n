@@ -11,7 +11,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder
+name: kj30-n-237-2410-6.6
 
 on:
   repository_dispatch:
