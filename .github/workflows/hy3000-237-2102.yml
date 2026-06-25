@@ -11,7 +11,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder
+name: hy3000-237-2102
 
 on:
   repository_dispatch:
