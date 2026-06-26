@@ -37,7 +37,11 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-
+# 新增2：安全创建8G Swap，彻底解决 /swapfile 权限报错
+     - name: Create Swap 8G
+       uses: pierotofy/set-swap-space@master
+       with:
+         swap-size-gb: 8
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
