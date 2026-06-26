@@ -39,9 +39,9 @@ jobs:
       uses: actions/checkout@main
       
     - name: Create Swap 8G
-       uses: pierotofy/set-swap-space@master
-       with:
-         swap-size-gb: 8
+      uses: pierotofy/set-swap-space@master
+      with:
+        swap-size-gb: 8
          
     - name: Initialization environment
       env:
