@@ -13,6 +13,10 @@
 
 name: KJ30-N 237-2410-6.6 OpenWrt Builder
 
+permissions:
+  contents: write
+  pull-requests: write
+  
 on:
   repository_dispatch:
   workflow_dispatch:
