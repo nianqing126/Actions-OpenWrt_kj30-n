@@ -91,10 +91,9 @@ jobs:
         cd openwrt
         # 第一步：先执行自定义脚本（改IP、主机名、主题）
         $GITHUB_WORKSPACE/$DIY_P2_SH
-        cd ..
+        cd openwrt
         # 第二步：脚本跑完，最后再导入KJ30-N的编译配置
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
-        cd openwrt
         # 只适配插件依赖，不会自动重置硬件Target机型
 
     - name: Download package
